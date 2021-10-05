@@ -6,7 +6,7 @@ import  slice  from "./slice";
 const persistConfig = {
     key: 'root',
     storage,
-    blacklist: [
+    blacklist: [ // These are feature flags, we do not want them cached. This way we can toggle the features with an app update
         'enablePasswordLengthOption',
         'enableSymbolsCheckbox',
         'enableNumbersCheckbox',
