@@ -10,7 +10,7 @@ class Header extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="https://github.com/hacked-is/passgenio">Source Code</Nav.Link>
+            <Nav.Link href="https://github.com/passgenio-web/app">Source Code</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
