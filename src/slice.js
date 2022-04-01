@@ -4,11 +4,11 @@ import emojis from './data/emoji';
 const initialState = {
     // Password Generation Options
     passwordLength: 16,
-    includeSymbols: true,
-    includeNumbers: true,
-    includeEmojis: false,
-    includeLowercaseLetters: true,
-    includeUppercaseLetters: true,
+    includeSymbols: false,
+    includeNumbers: false,
+    includeEmojis: true,
+    includeLowercaseLetters: false,
+    includeUppercaseLetters: false,
     excludeSimilarCharacters: true, // ( e.g. i, / \ ' " ` ~ , ; : . < > ) l, 1, L, o, 0, O )
     excludeAmbiguousCharacters: true, // ( { } [ ] ( )
     
@@ -34,11 +34,11 @@ const slice = createSlice({
     reducers: {
         resetOptions: (state, action) => {
           state.passwordLength = 16;
-          state.includeSymbols = true;
-          state.includeNumbers = true;
-          state.includeEmojis = false;
-          state.includeLowercaseLetters = true;
-          state.includeUppercaseLetters = true;
+          state.includeSymbols = false;
+          state.includeNumbers = false;
+          state.includeEmojis = true;
+          state.includeLowercaseLetters = false;
+          state.includeUppercaseLetters = false;
           state.excludeSimilarCharacters = true;
           state.excludeAmbiguousCharacters = true;
         },

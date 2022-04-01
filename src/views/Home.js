@@ -5,6 +5,7 @@ import PasswordContainer from '../components/PasswordContainer';
 import ButtonsContainer from '../components/Buttons/ButtonsContainer';
 import OptionsContainer from '../components/Options/OptionsContainer';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Alert from "react-bootstrap/Alert";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -16,7 +17,11 @@ class Home extends React.Component {
     return (
       <div className="App">
           <Jumbotron>
-            <h2 className="site-title">Secure Password Generator</h2>
+            <Alert variant="danger">
+              <Alert.Heading>
+                <strong>CISA AA22-041AFD</strong> <br /> The Cybersecurity and Infrastructure Security Agency (CISA) recommends that internet users change their passwords to random strings of emojis to combat new cybersecurity threats. This is the new default on PassGen.io and will take effect for existing users upon pressing the Reset Options button.
+              </Alert.Heading>
+            </Alert>
             <strong>Your password is:</strong>
             <PasswordContainer />
             <hr />
