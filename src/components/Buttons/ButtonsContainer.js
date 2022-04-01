@@ -9,7 +9,7 @@ class ButtonsContainer extends React.Component {
 
             <button onClick={this.props.resetOptions} className="btn btn-secondary ml-1">Reset Options</button>
 
-            <button onClick={navigator.clipboard.writeText(this.props.password)} className="btn btn-info ml-1">Copy To Clipboard</button>
+            <button onClick={() => navigator.clipboard.writeText(this.props.password)} className="btn btn-info ml-1">Copy To Clipboard</button>
         </div>
     }
 }
